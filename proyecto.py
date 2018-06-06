@@ -68,7 +68,7 @@ def esterilizacion():
 		devname=raw_input("Escriba el nombre del dispositivo  \t")
 		USB= '/dev/'+devname
 		
-		for i in range(10):
+		for i in range(3):
 			print ("\033[1;32m"+"Ceros y aleatorios "+ str(i+1)  +" vez")
 			print ("\033[1;37m")
 			os.system("dd if=/dev/urandom of="+USB+" bs=1024")
